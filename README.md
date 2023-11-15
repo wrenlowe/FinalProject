@@ -31,7 +31,7 @@ progress bar, analog clock, calendar view, ...).
 • There should be a listener registered on at least one of these 2 new GUI
 components (and there should be code to do something meaningful).
 
-    • one on the calendar view, probably to add a new event?
+    • one on the calendar view? setOnDateChangeListener(OnDateChangeListenerlistener)
     • some handler on progress bar?
     
 • Includes advertising (fake ad pulled from Google services).
