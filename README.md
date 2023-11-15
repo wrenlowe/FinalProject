@@ -25,7 +25,7 @@ maps, ..). -> could use the built in calendar app
 • Uses at least two new GUI components not studied in class (rating bar, seek bar,
 progress bar, analog clock, calendar view, ...). 
 
-    • calendar view?
+    • calendar view? https://abhiandroid.com/ui/calendarview#gsc.tab=0 
     • progress bar, to show how many tasks they completed that day?
     
 • There should be a listener registered on at least one of these 2 new GUI
