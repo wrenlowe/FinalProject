@@ -6,24 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+  <TextView
         android:id="@+id/prompt"
-        android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Today's Tasks:"
         android:textSize="20dp"
         />
+    <Button
+        android:id="@+id/add"
+        android:layout_margin="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20dp"
+        android:onClick="addTask"
+        />
 
     <ListView
         android:id="@+id/todo"
-        android:layout_below="@+id/prompt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:dividerHeight="3dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
         android:divider="#F000"
-        />
+        android:dividerHeight="3dp" />
 
     <Button
         android:id="@+id/calandar"
@@ -32,7 +44,7 @@
         android:paddingHorizontal="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Monthly Calendar"
+        android:text="Monthly To-Do"
         android:onClick="switchScreen"
         android:textSize="15dp"
         />
@@ -45,10 +57,11 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/calandar"
         android:layout_centerHorizontal="true"
-        android:text="Weekly Calendar"
+        android:text="Weekly To-Do"
         android:onClick="switchScreen"
         android:textSize="15dp"
         />
+
 
 
 </RelativeLayout>
