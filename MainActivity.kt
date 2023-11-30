@@ -10,6 +10,9 @@ import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.ListView
 import android.widget.RadioButton
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class MainActivity : AppCompatActivity() {
     private lateinit var listView : ListView
@@ -23,7 +26,9 @@ class MainActivity : AppCompatActivity() {
         calendar = Calendar()
 
         calendar.addItem("11302023", "Finish Project")
-        displayList("11302023")
+        val formatter = DateTimeFormatter.ofPattern("MMddyyyy")
+        val current : String = LocalDateTime.now().format(formatter)
+        displayList(current)
 
 
     }
@@ -84,7 +89,11 @@ class MainActivity : AppCompatActivity() {
     // need to deal with event handling when the user checks that they have finished a task
     inner class ListItemHandler : AdapterView.OnItemClickListener {
         override fun onItemClick(p0: AdapterView<*>?, view: View?, position: Int, id: Long) {
-            Log.w("MainActivity", "check if this is the right listener ")
+            val formatter = DateTimeFormatter.ofPattern("MMddyyyy")
+            val current : String = LocalDateTime.now().format(formatter)
+            var oldList : ArrayList<String> = calendar.getListForDay(current)!!
+            oldList.removeAt(position)
+            displayList(current)
         }
     }
     companion object{
