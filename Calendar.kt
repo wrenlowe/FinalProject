@@ -1,8 +1,32 @@
 package com.example.finalproject
 
+import android.content.Context
+import android.content.SharedPreferences
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+
+
 class Calendar {
-      private lateinit var list : HashMap<String, ArrayList<String>>
-    
+
+    private lateinit var list : HashMap<String, ArrayList<String>>
+
+    constructor(){
+        list = hashMapOf()
+    }
+    constructor(context: Context) {
+        var pref: SharedPreferences = context.getSharedPreferences(
+            context.packageName +
+                    "_preferences", Context.MODE_PRIVATE
+        )
+        val defValue = Gson().toJson(HashMap<String, ArrayList<String>>())
+        val json = pref.getString(PREFERENCE_TODO, defValue)
+        val token: TypeToken<HashMap<String, ArrayList<String>>> =
+            object :
+                TypeToken<HashMap<String, ArrayList<String>>>() {}
+        setList(Gson().fromJson(json, token.type))
+
+    }
+
     fun getList() : HashMap<String, ArrayList<String>>{
         return list
     }
@@ -24,6 +48,7 @@ class Calendar {
             oldList.add(l)
             list.set(day, oldList)
         }
+
     }
     fun removeDay(day: String){
         list.remove(day)
@@ -34,8 +59,20 @@ class Calendar {
             oldList.remove(l)
         }
     }
+    fun setPreferences(context: Context) {
+        val jsonString: String = Gson().toJson(list)
+        var pref : SharedPreferences = context.getSharedPreferences( context.packageName +
+                "_preferences", Context.MODE_PRIVATE )
+        var editor : SharedPreferences.Editor = pref.edit()
+        editor.putString( PREFERENCE_TODO, jsonString )
+        editor.commit()
+    }
+    companion object {
+        private const val PREFERENCE_TODO : String = "current level"
 
+    }
 
+}
 
 
 
