@@ -29,6 +29,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.google.android.gms.ads.AdActivity" />
+        <activity android:name=".DataActivity"/>
+        <activity android:name=".TaskActivity"/>
     </application>
 
 </manifest>
