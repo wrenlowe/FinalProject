@@ -31,6 +31,7 @@
         <activity android:name="com.google.android.gms.ads.AdActivity" />
         <activity android:name=".DataActivity"/>
         <activity android:name=".TaskActivity"/>
+        <activity android:name=".WeekActivity"/>
     </application>
 
 </manifest>
