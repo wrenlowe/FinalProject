@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         listView = findViewById<ListView>( R.id.todo )
-        calendar = Calendar()
+        calendar = Calendar(this)
 
         calendar.addItem("11302023", "Finish Project")
         displayList(current)
@@ -88,6 +88,7 @@ class MainActivity : AppCompatActivity() {
         override fun onItemClick(p0: AdapterView<*>?, view: View?, position: Int, id: Long) {
             var oldList : ArrayList<String> = calendar.getListForDay(current)!!
             oldList.removeAt(position)
+            calendar.setPreferences(this@MainActivity)
             displayList(current)
         }
     }
