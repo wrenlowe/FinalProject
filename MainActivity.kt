@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         listView = findViewById<ListView>( R.id.todo )
         calendar = Calendar()
+        // just to see if the listView was working correctly
         calendar.addItem("11302023", "Finish Project")
         displayList("11302023")
 
