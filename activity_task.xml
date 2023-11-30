@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/enterDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Date of Task:"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/dateEntered"
+        android:layout_below="@+id/enterDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter date as mmddyyyy"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/enterTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateEntered"
+        android:text="Enter Task:"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/taskEntered"
+        android:layout_below="@+id/enterTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter task here"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
