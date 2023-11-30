@@ -38,14 +38,14 @@ components (and there should be code to do something meaningful).
      
 # Requirements:
 
-• Nice looking icon for the app.
+• Nice looking icon for the app. 
 
-• Must use the Model-View-Controller architecture.
+• Must use the Model-View-Controller architecture. -> COMPLETE
 
-• Model for the app.
+• Model for the app. -> COMPLETE
 
 • At least 3 views; at least 2 views should "use" the same data (either sharing or
-passing the data); persistent meaningful data.
+passing the data); persistent meaningful data. -> COMPLETE
 
 • At least 2 transitions between screens.
 
