@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's Tasks:"
+        android:textSize="20dp"
+        />
+
+    <ListView
+        android:id="@+id/todo"
+        android:layout_below="@+id/prompt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="3dp"
+        android:divider="#F000"
+        />
+
+    <Button
+        android:id="@+id/calandar"
+        android:layout_margin="25dp"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Calendar"
+        android:onClick="switchScreen"
+        android:textSize="15dp"
+        />
+    <Button
+        android:id="@+id/weekly"
+        android:layout_margin="25dp"
+        android:paddingHorizontal="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/calandar"
+        android:layout_centerHorizontal="true"
+        android:text="Weekly Calendar"
+        android:onClick="switchScreen"
+        android:textSize="15dp"
+        />
+
+
+</RelativeLayout>
