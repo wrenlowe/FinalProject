@@ -105,6 +105,6 @@ class WeekActivity : AppCompatActivity() {
 
     fun goBack(v: View) {
        // update()
-        finish()
+        finishAfterTransition()
     }
 }
