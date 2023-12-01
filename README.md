@@ -9,9 +9,9 @@
 • At least 3 views; at least 2 views should "use" the same data (either sharing or
 passing the data); persistent meaningful data.
 
-    • Main Activity -> starting display
-    • Calendar Activity -> calendar display
-    • Task Activity -> adds new task
+    • Main Activity -> starting display -> COMPLETE
+    • Calendar Activity -> calendar display -> COMPLETE
+    • Task Activity -> adds new task -> COMPLETE
     • Week Activity -> to-do list display?
     
 • At least 2 transitions between screens.
