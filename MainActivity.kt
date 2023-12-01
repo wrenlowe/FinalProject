@@ -3,6 +3,8 @@ package com.example.finalproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.app.ActivityOptions
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         displayList(current)
 
 
+
     }
     fun displayList(day : String) {
         if( day != null ) {
@@ -39,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 
     override fun onStart() {
         super.onStart()
@@ -74,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     fun calendarSwitch (v : View){
         // update
         var intent:Intent = Intent(this, CalendarActivity::class.java)
-        startActivity(intent)
+        startActivity( intent, ActivityOptions.makeSceneTransitionAnimation( this ).toBundle() )
 
     }
     fun weekSwitch (v : View){
