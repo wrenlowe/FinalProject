@@ -1,5 +1,6 @@
 package com.example.finalproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -28,6 +29,7 @@ class CalendarActivity : AppCompatActivity() {
         calendarView = findViewById(R.id.simpleCalendarView)
         clh = CalendarListHandler()
         calendarView.setOnDateChangeListener(clh)
+        displayList(current)
     }
     fun displayList(day : String) {
 
@@ -41,6 +43,10 @@ class CalendarActivity : AppCompatActivity() {
             }
         }
 
+    }
+    fun addTask(v : View){
+        var intent: Intent = Intent(this, TaskActivity::class.java)
+        startActivity(intent)
     }
     inner class CalendarListHandler : CalendarView.OnDateChangeListener {
         override fun onSelectedDayChange(view: CalendarView, year: Int, month: Int, dayOfMonth: Int) {
@@ -65,6 +71,7 @@ class CalendarActivity : AppCompatActivity() {
     }
 
     override fun onResume() {
+        displayList(current)
         super.onResume()
     }
 
