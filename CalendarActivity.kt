@@ -148,13 +148,7 @@ class CalendarActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
     }
-
-    fun update(){
-        //amountTextView.text = (MainActivity.travel.currency(MainActivity.travel.getAmount(enterAmountEditText)))
-
-    }
     fun goBack(v: View){
-        update()
-        finish()
+        finishAfterTransition()
     }
 }
