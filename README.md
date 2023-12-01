@@ -57,6 +57,7 @@ maps, ..).
 • Uses at least two new GUI components not studied in class (rating bar, seek bar,
 progress bar, analog clock, calendar view, ...).
 CalendarView -> COMPLETE
+
 Second GUI Component -> INCOMPLETE
 
 • There should be a listener registered on at least one of these 2 new GUI
