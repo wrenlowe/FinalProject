@@ -35,7 +35,7 @@ components (and there should be code to do something meaningful).
     • one on the calendar view? setOnDateChangeListener(OnDateChangeListenerlistener) -> COMPLETE
     • some handler on progress bar?
     
-• Includes advertising (fake ad pulled from Google services).
+• Includes advertising (fake ad pulled from Google services). -> COMPLETE
      
 # Requirements:
 
@@ -64,7 +64,7 @@ Second GUI Component -> INCOMPLETE
 components (and there should be code to do something meaningful).
 Listener on CalendarView -> COMPLETE
 
-• Includes advertising (fake ad pulled from Google services).
+• Includes advertising (fake ad pulled from Google services). -> COMPLETE
 
 • Be a meaningful, good looking app with nice and significant functionality; should
 look nice and clean, user friendly, intuitive (how to use it). -> COMPLETE
