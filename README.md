@@ -16,8 +16,8 @@ passing the data); persistent meaningful data.
     
 • At least 2 transitions between screens.
 
-    • transition from Main Activity to Calendar Activity
-    • transition from Main Activity to Week Activity
+    • transition from Main Activity to Calendar Activity -> COMPLETE    
+    • transition from Main Activity to Week Activity -> COMPLETE
     
 • Includes meaningful use of either an app (for example, email, voice recognition,
 ..) or hardware (gps, accelerometer, ..) from the phone or some Google services(
@@ -48,7 +48,7 @@ components (and there should be code to do something meaningful).
 • At least 3 views; at least 2 views should "use" the same data (either sharing or
 passing the data); persistent meaningful data. -> COMPLETE
 
-• At least 2 transitions between screens.
+• At least 2 transitions between screens. -> COMPLETE
 
 • Includes meaningful use of either an app (for example, email, voice recognition,
 ..) or hardware (gps, accelerometer, ..) from the phone or some Google services(
