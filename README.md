@@ -55,11 +55,14 @@ maps, ..).
 
 • Uses at least two new GUI components not studied in class (rating bar, seek bar,
 progress bar, analog clock, calendar view, ...).
+CalendarView -> COMPLETE
+Second GUI Component -> INCOMPLETE
 
 • There should be a listener registered on at least one of these 2 new GUI
 components (and there should be code to do something meaningful).
+Listener on CalendarView -> COMPLETE
 
 • Includes advertising (fake ad pulled from Google services).
 
 • Be a meaningful, good looking app with nice and significant functionality; should
-look nice and clean, user friendly, intuitive (how to use it).
+look nice and clean, user friendly, intuitive (how to use it). -> COMPLETE
