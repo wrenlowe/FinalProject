@@ -6,13 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/name"
+        android:layout_margin="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Day"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/add"
+        android:layout_margin="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20dp"
+        android:onClick="addTask"
+        />
     <CalendarView
+        android:layout_below="@+id/name"
         android:id="@+id/simpleCalendarView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginLeft="20dp"
+        />
     <ListView
-        android:id="@+id/todo"
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/simpleCalendarView"
