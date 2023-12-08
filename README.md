@@ -2,7 +2,7 @@
 
 # To Do:
 
-• Make the icon for the app -> make it a calendar icon
+• Make the icon for the app -> COMPLETE - added to-do list looking icon
 
 • Model for the app -> stores the information stored on the app
 
@@ -12,7 +12,7 @@ passing the data); persistent meaningful data.
     • Main Activity -> starting display -> COMPLETE
     • Calendar Activity -> calendar display -> COMPLETE
     • Task Activity -> adds new task -> COMPLETE
-    • Week Activity -> to-do list display?
+    • Week Activity -> COMPLETE - shows all tasks needed to be compelte from all dates
     
 • At least 2 transitions between screens.
 
@@ -21,19 +21,19 @@ passing the data); persistent meaningful data.
     
 • Includes meaningful use of either an app (for example, email, voice recognition,
 ..) or hardware (gps, accelerometer, ..) from the phone or some Google services(
-maps, ..). -> could use the built in calendar app
+maps, ..). -> could use the built in calendar app --> COMPLETE - added use of email app (users can send their daily tasks through email)
 
 • Uses at least two new GUI components not studied in class (rating bar, seek bar,
 progress bar, analog clock, calendar view, ...). 
 
     • calendar view? https://abhiandroid.com/ui/calendarview#gsc.tab=0 -> COMPLETE
-    • progress bar, to show how many tasks they completed that day?
+    • progress bar, to show how many tasks they completed that day? --> COMPLETE (added progress bar to main page)
     
 • There should be a listener registered on at least one of these 2 new GUI
 components (and there should be code to do something meaningful).
 
     • one on the calendar view? setOnDateChangeListener(OnDateChangeListenerlistener) -> COMPLETE
-    • some handler on progress bar?
+    • some handler on progress bar? --> dont need to do? 
     
 • Includes advertising (fake ad pulled from Google services). -> COMPLETE
      
@@ -52,13 +52,13 @@ passing the data); persistent meaningful data. -> COMPLETE
 
 • Includes meaningful use of either an app (for example, email, voice recognition,
 ..) or hardware (gps, accelerometer, ..) from the phone or some Google services(
-maps, ..).
+maps, ..). --> COMPLETE
 
 • Uses at least two new GUI components not studied in class (rating bar, seek bar,
 progress bar, analog clock, calendar view, ...).
 CalendarView -> COMPLETE
 
-Second GUI Component -> INCOMPLETE
+Second GUI Component -> COMPLETE
 
 • There should be a listener registered on at least one of these 2 new GUI
 components (and there should be code to do something meaningful).
